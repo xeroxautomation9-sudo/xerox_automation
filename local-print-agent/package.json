@@ -1,0 +1,22 @@
+{
+  "name": "local-print-agent",
+  "version": "1.0.0",
+  "description": "Local print agent for PrintOS",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.40.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "pdf-to-printer": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
