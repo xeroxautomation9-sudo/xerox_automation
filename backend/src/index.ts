@@ -12,6 +12,14 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
+// Root Route (Helpful diagnostic)
+app.get('/', (req, res) => {
+  res.json({
+    status: "online",
+    message: "Welcome to PrintOS Backend API. You are looking at the raw backend server API! To see your dashboard UI, please go to your deployed NEXT.JS Frontend URL on Vercel."
+  });
+});
+
 // API Routes
 app.use('/api', apiRouter);
 
